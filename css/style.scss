@@ -1,0 +1,61 @@
+.clsUtkBdy {
+    // Body ny berubah
+    background-color: rgb(5, 5, 151);
+    color: red;
+    transition: all 0.5s;
+}
+
+#bdy {
+
+
+    .container {
+        max-width: 375px;
+        margin: 30px auto;
+        position: relative;
+        text-align: center;
+
+        .imgKaget {
+            // display: none;
+            width: 300px;
+        }
+
+        @mixin btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+
+            .sadar {
+                @include btn();
+                background-color: rgb(7, 173, 7);
+                font-weight: bold;
+                width: 180px;
+                font-size: 10px
+            }
+
+            .masih-aman {
+                @include btn();
+                background-color: white;
+                border: 2px solid red;
+                color: red;
+                font-size: 30px
+            }
+
+            .gila {
+                @include btn();
+                border: none;
+                background-color: rgb(161, 0, 0);
+                color: white;
+
+            }
+        }
+
+
+    }
+}

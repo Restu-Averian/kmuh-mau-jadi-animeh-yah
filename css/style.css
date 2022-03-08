@@ -1,0 +1,62 @@
+.clsUtkBdy {
+  background-color: #050597;
+  color: red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#bdy .container {
+  max-width: 375px;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+}
+
+#bdy .container .imgKaget {
+  width: 300px;
+}
+
+#bdy .container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bdy .container .btn .sadar {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #07ad07;
+  font-weight: bold;
+  width: 180px;
+  font-size: 10px;
+}
+
+#bdy .container .btn .masih-aman {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  font-size: 30px;
+}
+
+#bdy .container .btn .gila {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background-color: #a10000;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
