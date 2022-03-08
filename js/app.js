@@ -11,9 +11,38 @@ let flag = 1;
 let countHover = 0
 
 gmau.addEventListener("mouseover", () => {
-gmau.style.position = "absolute";
-
     geser()
+    munculAlert()
+    // console.log(countHover)
+})
+gmau.addEventListener("click",()=>{
+    geser();
+    munculAlert()
+})
+
+
+
+function geser() {
+    
+    gmau.style.position = "absolute";
+    
+    let a = Math.floor(Math.random() * 300)
+    let b = Math.floor(Math.random() * 300)
+    if (flag == 1) {
+        
+        gmau.style.left = `${a}px`;
+        gmau.style.top = `${b}px`;
+        gmau.style.transition = "0.5s"
+        flag = 2
+    } else if (flag == 2) {
+        gmau.style.left = `${a}px`;
+        gmau.style.top = `${b}px`;
+        gmau.style.transition = "0.5s"
+        flag = 1
+    }
+}
+
+function munculAlert() {
     countHover++;
 
     if (countHover == 8) {
@@ -66,26 +95,8 @@ gmau.style.position = "absolute";
 
         imgKaget.setAttribute('src','img/Rika.jpg')
         imgKaget.style.width="370px"
-        title.innerHTML="Nipaaa"
+        title.innerHTML="(Sumpah masi bingung mau diapain HAHAHA)"
         title.style.transition="all 0.5s"
         btnSadar.style.display="none"
     }
-    console.log(countHover)
-})
-
-function geser() {
-    let a = Math.floor(Math.random() * 300)
-    let b = Math.floor(Math.random() * 300)
-    if (flag == 1) {
-        
-        gmau.style.left = `${a}px`;
-        gmau.style.top = `${b}px`;
-        gmau.style.transition = "0.5s"
-        flag = 2
-    } else if (flag == 2) {
-        gmau.style.left = `${a}px`;
-        gmau.style.top = `${b}px`;
-        gmau.style.transition = "0.5s"
-        flag = 1
-    }
-}
+  }
